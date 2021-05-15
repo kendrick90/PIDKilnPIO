@@ -1,0 +1,16 @@
+   <tr><th colspan="6"><hr></th></tr>
+ </table>
+
+ <br>
+
+ <form method='POST' action='/upload' enctype='multipart/form-data'>
+  <fieldset>
+   <legend> Upload new program </legend>
+    <label for"file"> Choose a program file: </label>
+    <input type='file' name='upload' id="upload_program" accept=".txt,.ino" onchange="ValidateSize(this)">
+    <input class="floatr" type='submit' value='Upload new program'>
+  </fieldset>
+ </form>
+
+ </div>
+</body></html>

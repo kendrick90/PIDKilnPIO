@@ -1,0 +1,181 @@
+
+div.debug {
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fafafa;
+  border: 4px dotted black;
+  margin-top: 12px;
+}
+
+table.debug {
+  width: 100%;
+}
+
+table.debug th {
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px;
+  padding-left: 20px;
+  border-radius: 7px;
+}
+
+/* Error
+*/
+.error {
+  font-size: 1.4em;
+  font-weight: bold;
+  background-color: #C2624D;
+  color: white;
+  padding: 10px;
+  padding-left: 20px;
+  width: 98%;
+  border-radius: 7px;
+}
+
+/* Style for forms
+*/
+.container {
+  border: 4px dotted black;
+  background-color: #fafafa;
+  padding: 10px 20px;
+  width: 80%;
+  margin-top: 12px;
+}
+
+legend {
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px;
+  padding-left: 20px;
+  width: 90%;
+  border-radius: 7px;
+}
+
+legend h1 {
+  font-size: 1.4em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+legend h2 {
+  font-size: 1.2em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+fieldset {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  padding: 8px 12px 8px 0;
+  display: inline-block;
+}
+
+input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+input[type=submit] {
+  padding: 4px 20px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+input[type=submit].floatr {
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #4CAF50;
+  border-radius: 7px;
+}
+
+.for_submit{
+  float:left;
+  width:24%;
+}
+
+.for_submit input[type=submit]{
+  margin-left: 30px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.column {
+  float: left;
+}
+
+.RowX {
+  float: left;
+  border: 1px;
+  margin-top: 6px;
+  text-align: right;
+}
+
+.RowX p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.RowA {
+  float: left;
+  width: 8em;
+  margin-top: 6px;
+  text-align: right;
+}
+
+.RowB {
+  float: left;
+  width: 9em;
+  margin-top: 6px;
+}
+
+input.index {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after, .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.field-icon {
+  float: right;
+  margin-left: -3em;
+  margin-top: 0.4em;
+  margin-right: 0.2em;
+  position: relative;
+  z-index: 2;
+  height: 1.5em;
+}
+
+/* Chart part */
+.PIDChart {
+  margin-left: 4em;
+}
+

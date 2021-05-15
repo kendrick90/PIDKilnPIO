@@ -1,0 +1,43 @@
+1.2 (2020.03.22)
+- extended error reporting for MAX31855 and thermocouples
+	[ADDONS] Temperature sensor A readout: Internal temp = 26.1 	 Last temp = 24.2 	 Average kiln temp = 20.9
+	[ADDONS] ThermocoupleA not connected
+	[ADDONS] MAX31855 for ThermocoupleC did not respond
+- lowered SPI clock value for less errors during communication handling (in MAX31855 library)
+
+1.1 (2020.03.15)
+- synced my local repo with github for MAX31855 library (link in documentation/readme) - there were missing part with linear computation, without it PIDKiln would not compile
+- added MAC address information in LCD Info screen (if you would need to add it to your WiFi filtering)
+- get rid of awesome font - it required Internet and it's much too heavy for two icons - replaced with PNGs
+- replaced index_local.html (with locally provided large JavaScript files for WiFi without Internet) with preference switch - whether to send file locally or remotely (recommended)
+- fixed MAX31855 library to detect disconnection
+- introduced Syslog feature - to transfer remotely (by UDP) all debug information. You can choose whether you want to have them on serial, syslog or both.
+- add 10nF capacitor to thermocouple input pins - it's a must to have reliable readout (I've learned it hard way)
+- switched from Adafruit-MAX31855 to enjoyneering/MAX31855 library - much cleaner design
+
+1.0 (2019.10.26)
+- implemented basic authentication for WWW interface (add preferences for it) - default username/pw is admin/hotashell
+- added PID window divider (as define in PIDKiln.h) - can be use to increase PID responsiveness
+- reverse sorting of logs (new = first), add MAX file logs parameter - to erase older logs automatically
+- fixes in WiFi mode preferences
+
+0.95 (2019.10.22) Almost, almost there ;)
+- add binary firmware flashing with Webpage
+- add second SSR for additional heater (works at the same time as SSR1) on GPIO 22 - read explanation in docs
+- created new, lazy OTA Installation script for quick installation (I'm not sure if its a good idea but since I could, I've done it ;) )
+
+0.9 (2019.10.12) Almost there
+- first release with changelog - all previous releases are only "git commit" documented
+- add power meter support
+- add AP mode for WiFi (already planed before - just implemented it) - in prefs user can choose between Client mode, AP mode or fail safe mode
+- created printable box case for PIDKiln (https://www.thingiverse.com/thing:3907643)
+- add alarm functionality with ALARM_PIN going high on Abort. There is also prefs value - how long keep alarm on.
+
+0.8
+- polished web interface
+- switch to tasks
+- extended safety features
+- introduced logs
+
+0.7
+- initial fully functional release
